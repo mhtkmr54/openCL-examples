@@ -1,0 +1,12 @@
+"/tmp/OCL28263T302.cl", line 8: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+    return weight*rhoK*(1 - 1.5*(u.x*u.x + u.y*u.y) + 3*eiu + 4.5*eiu*eiu);
+                            ^
+
+"/tmp/OCL28263T302.cl", line 8: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+    return weight*rhoK*(1 - 1.5*(u.x*u.x + u.y*u.y) + 3*eiu + 4.5*eiu*eiu);
+                                                              ^
+

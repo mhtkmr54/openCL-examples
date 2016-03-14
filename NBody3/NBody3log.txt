@@ -1,0 +1,6 @@
+"/tmp/OCL4063T9806.cl", line 28: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+                              ^
+

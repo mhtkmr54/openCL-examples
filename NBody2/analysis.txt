@@ -1,0 +1,1497 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00       47     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00      0.00     0.00       47     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.00     0.00       29     0.00     0.00  cl::detail::errHandler(int, char const*)
+  0.00      0.00     0.00       10     0.00     0.00  cl::Memory::~Memory()
+  0.00      0.00     0.00       10     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::~Wrapper()
+  0.00      0.00     0.00        9     0.00     0.00  cl::Buffer::~Buffer()
+  0.00      0.00     0.00        9     0.00     0.00  cl::detail::ReferenceHandler<_cl_mem*>::release(_cl_mem*)
+  0.00      0.00     0.00        9     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::release() const
+  0.00      0.00     0.00        7     0.00     0.00  cl::Memory::Memory()
+  0.00      0.00     0.00        7     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::Wrapper()
+  0.00      0.00     0.00        6     0.00     0.00  cl::detail::ReferenceHandler<_cl_mem*>::retain(_cl_mem*)
+  0.00      0.00     0.00        6     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::retain() const
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        5     0.00     0.00  cl::detail::Wrapper<_cl_context*>::operator()() const
+  0.00      0.00     0.00        4     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::operator()() const
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::base() const
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy_aux<false>::__destroy<cl::Device*>(cl::Device*, cl::Device*)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  cl::Device* std::__addressof<cl::Device>(cl::Device&)
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy<cl::Device*>(cl::Device*, cl::Device*)
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&)
+  0.00      0.00     0.00        4     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.00     0.00        3     0.00     0.00  cl::Buffer::Buffer(cl::Context const&, unsigned long, unsigned long, void*, int*)
+  0.00      0.00     0.00        3     0.00     0.00  cl::Buffer::Buffer(cl::Buffer const&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::Buffer::Buffer()
+  0.00      0.00     0.00        3     0.00     0.00  cl::Buffer::operator=(cl::Buffer const&)
+  0.00      0.00     0.00        3     0.00     0.00  int cl::Kernel::setArg<cl::Buffer>(unsigned int, cl::Buffer)
+  0.00      0.00     0.00        3     0.00     0.00  cl::Memory::Memory(cl::Memory const&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::Memory::operator=(cl::Memory const&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::detail::KernelArgumentHandler<cl::Buffer>::ptr(cl::Buffer&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::detail::KernelArgumentHandler<cl::Buffer>::size(cl::Buffer const&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::Wrapper(cl::detail::Wrapper<_cl_mem*> const&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::detail::Wrapper<_cl_mem*>::operator=(cl::detail::Wrapper<_cl_mem*> const&)
+  0.00      0.00     0.00        3     0.00     0.00  cl::size_t<3>::size_t()
+  0.00      0.00     0.00        3     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::operator()() const
+  0.00      0.00     0.00        3     0.00     0.00  cl::NDRange::dimensions() const
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::size() const
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  cl::Device::~Device()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>::operator()(unsigned int, unsigned long, void*, unsigned long*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>::operator()(unsigned int, unsigned long, void*, unsigned long*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::ReferenceHandler<_cl_program*>::release(_cl_program*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::ReferenceHandler<_cl_device_id*>::retain(_cl_device_id*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::ReferenceHandler<_cl_device_id*>::release(_cl_device_id*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_context*>::Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_context*>::~Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_program*>::Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_program*>::~Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::isReferenceCountable(_cl_device_id*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::~Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_command_queue*>::Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_command_queue*>::~Wrapper()
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::getVersion(char const*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::getPlatformVersion(_cl_platform_id*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::getDevicePlatformVersion(_cl_device_id*)
+  0.00      0.00     0.00        2     0.00     0.00  cl::size_t<3>::operator[](int)
+  0.00      0.00     0.00        2     0.00     0.00  cl::NDRange::NDRange(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  cl::Program::~Program()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<cl::Device>::deallocate(cl::Device*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<cl::Device>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<cl::Device>::new_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<cl::Device>::~new_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::~new_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::__normal_iterator(cl::Device const* const&)
+  0.00      0.00     0.00        2     0.00     0.00  bool __gnu_cxx::operator!=<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&)
+  0.00      0.00     0.00        2     0.00     0.00  cl::CommandQueue::enqueueReadBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const
+  0.00      0.00     0.00        2     0.00     0.00  cl::CommandQueue::enqueueWriteBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void const*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_program*>::release() const
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::retain() const
+  0.00      0.00     0.00        2     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::release() const
+  0.00      0.00     0.00        2     0.00     0.00  cl::size_t<3>::operator unsigned long const*() const
+  0.00      0.00     0.00        2     0.00     0.00  cl::NDRange::operator unsigned long const*() const
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<cl::Device>::max_size() const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::capacity() const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::operator[](unsigned long) const
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<cl::Device>::allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<cl::Device>::~allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<std::pair<char const*, unsigned long> >::~allocator()
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy_aux<false>::__destroy<cl::Platform*>(cl::Platform*, cl::Platform*)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_base()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<cl::Device, std::allocator<cl::Device> >::~_Vector_base()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_deallocate(cl::Platform*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::vector()
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::~vector()
+  0.00      0.00     0.00        2     0.00     0.00  cl::Platform* std::__addressof<cl::Platform>(cl::Platform&)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<cl::Device>(cl::Device*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<cl::Platform*>(cl::Platform*, cl::Platform*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<cl::Platform*, cl::Platform>(cl::Platform*, cl::Platform*, std::allocator<cl::Platform>&)
+  0.00      0.00     0.00        2     0.00     0.00  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::CommandQueue::CommandQueue()
+  0.00      0.00     0.00        1     0.00     0.00  cl::CommandQueue::~CommandQueue()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Event::Event()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Event::~Event()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Event::operator=(_cl_event* const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Image::Image()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Image::~Image()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Local(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device::Device(cl::Device const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device::Device(_cl_device_id* const&)
+  0.00      0.00     0.00        1     0.00     0.00  int cl::Kernel::setArg<cl::LocalSpaceArg>(unsigned int, cl::LocalSpaceArg)
+  0.00      0.00     0.00        1     0.00     0.00  int cl::Kernel::setArg<unsigned int>(unsigned int, unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Kernel::Kernel(cl::Program const&, char const*, int*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Kernel::~Kernel()
+  0.00      0.00     0.00        1     0.00     0.00  int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type)
+  0.00      0.00     0.00        1     0.00     0.00  int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*> >(cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>, unsigned int, std::string*, long)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::ReferenceHandler<_cl_kernel*>::release(_cl_kernel*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::ReferenceHandler<_cl_context*>::release(_cl_context*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::ReferenceHandler<_cl_program*>::retain(_cl_program*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::ReferenceHandler<_cl_platform_id*>::release(_cl_platform_id*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::ReferenceHandler<_cl_command_queue*>::release(_cl_command_queue*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::ReferenceHandler<_cl_event*>::release(_cl_event*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::ptr(cl::LocalSpaceArg&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::size(cl::LocalSpaceArg const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::KernelArgumentHandler<unsigned int>::ptr(unsigned int&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::KernelArgumentHandler<unsigned int>::size(unsigned int const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_kernel*>::Wrapper()
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_kernel*>::~Wrapper()
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_program*>::operator=(cl::detail::Wrapper<_cl_program*> const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::Wrapper(_cl_device_id* const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_platform_id*>::Wrapper(_cl_platform_id* const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_platform_id*>::~Wrapper()
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_platform_id*>::operator()()
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_event*>::Wrapper()
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_event*>::~Wrapper()
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_event*>::operator=(_cl_event* const&)
+  0.00      0.00     0.00        1     0.00     0.00  int cl::detail::getInfo<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*, std::vector<cl::Device, std::allocator<cl::Device> > >(int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context* const&, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*)
+  0.00      0.00     0.00        1     0.00     0.00  int cl::detail::getInfo<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*, std::string>(int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program* const&, _cl_device_id* const&, unsigned int, std::string*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Context::Context(unsigned long, long*, void (*)(char const*, void const*, unsigned long, void*), void*, int*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Context::Context()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Context::~Context()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Image2D::Image2D()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Image2D::~Image2D()
+  0.00      0.00     0.00        1     0.00     0.00  cl::NDRange::NDRange()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Program::Program()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Program::operator=(cl::Program const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform::get(std::vector<cl::Platform, std::allocator<cl::Platform> >*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform::Platform(_cl_platform_id* const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform::~Platform()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cl::Platform>::deallocate(cl::Platform*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cl::Platform>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cl::Platform>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cl::Platform>::~new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::deallocate(std::pair<char const*, unsigned long>*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator(__gnu_cxx::new_allocator<std::pair<char const*, unsigned long> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator++()
+  0.00      0.00     0.00        1     0.00     0.00  cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const
+  0.00      0.00     0.00        1     0.00     0.00  cl::Event::wait() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_kernel*>::release() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_kernel*>::operator()() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_context*>::release() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_program*>::retain() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_program*>::operator()() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_platform_id*>::release() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_command_queue*>::release() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::Wrapper<_cl_event*>::release() const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::param_traits<cl::detail::cl_context_info, 4225>::param_type cl::Context::getInfo<4225>(int*) const
+  0.00      0.00     0.00        1     0.00     0.00  int cl::Context::getInfo<std::vector<cl::Device, std::allocator<cl::Device> > >(unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) const
+  0.00      0.00     0.00        1     0.00     0.00  cl::detail::param_traits<cl::detail::cl_program_build_info, 4483>::param_type cl::Program::getBuildInfo<4483>(cl::Device const&, int*) const
+  0.00      0.00     0.00        1     0.00     0.00  int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const
+  0.00      0.00     0.00        1     0.00     0.00  cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cl::Platform>::max_size() const
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::max_size() const
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator*() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::end() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::begin() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long) const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Platform, std::allocator<cl::Platform> >::size() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Platform, std::allocator<cl::Platform> >::capacity() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::size() const
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<cl::Platform>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<cl::Platform>::~allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<std::pair<char const*, unsigned long> >::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<std::pair<char const*, unsigned long> >::allocator(std::allocator<std::pair<char const*, unsigned long> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<char const*, unsigned long> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_deallocate(std::pair<char const*, unsigned long>*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_create_storage(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_base(unsigned long, std::allocator<std::pair<char const*, unsigned long> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::__uninitialized_copy<false>::__uninit_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform* std::__uninitialized_copy<false>::__uninit_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::pair<char const*, unsigned long>::pair(char const* const&, unsigned long const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_dispatch<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::__false_type)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<cl::Device, std::allocator<cl::Device> >::assign<_cl_device_id**>(_cl_device_id**, _cl_device_id**)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_dispatch<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::__false_type)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**)
+  0.00      0.00     0.00        1     0.00     0.00  void std::vector<cl::Platform, std::allocator<cl::Platform> >::assign<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Platform, std::allocator<cl::Platform> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Platform, std::allocator<cl::Platform> >::~vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cl::Platform, std::allocator<cl::Platform> >::operator[](unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_fill_initialize(unsigned long, std::pair<char const*, unsigned long> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::vector(unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~vector()
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Construct<cl::Device, _cl_device_id*>(cl::Device*, _cl_device_id* const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Construct<cl::Device, cl::Device>(cl::Device*, cl::Device const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Construct<cl::Platform, _cl_platform_id*>(cl::Platform*, _cl_platform_id* const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Construct<std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<_cl_device_id**>::difference_type std::__distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::random_access_iterator_tag)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<_cl_platform_id**>::difference_type std::__distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::random_access_iterator_tag)
+  0.00      0.00     0.00        1     0.00     0.00  std::pair<char const*, unsigned long>* std::__addressof<std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::uninitialized_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::uninitialized_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform* std::uninitialized_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<_cl_device_id**>::iterator_category std::__iterator_category<_cl_device_id**>(_cl_device_id** const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<_cl_platform_id**>::iterator_category std::__iterator_category<_cl_platform_id**>(_cl_platform_id** const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::uninitialized_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, cl::Device>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, std::allocator<cl::Device>&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Device* std::__uninitialized_copy_a<_cl_device_id**, cl::Device*, cl::Device>(_cl_device_id**, _cl_device_id**, cl::Device*, std::allocator<cl::Device>&)
+  0.00      0.00     0.00        1     0.00     0.00  cl::Platform* std::__uninitialized_copy_a<_cl_platform_id**, cl::Platform*, cl::Platform>(_cl_platform_id**, _cl_platform_id**, cl::Platform*, std::allocator<cl::Platform>&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__uninitialized_fill_n_a<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> >&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<cl::Platform>(cl::Platform*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*, std::allocator<std::pair<char const*, unsigned long> >&)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<_cl_device_id**>::difference_type std::distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<_cl_platform_id**>::difference_type std::distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**)
+  0.00      0.00     0.00        1     0.00     0.00  std::pair<char const*, unsigned long> std::make_pair<char const*, unsigned long>(char const*, unsigned long)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00      47/47          main [6]
+[8]      0.0    0.00    0.00      47         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [8]
+-----------------------------------------------
+                0.00    0.00      47/47          main [6]
+[9]      0.0    0.00    0.00      47         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [9]
+-----------------------------------------------
+                0.00    0.00       1/29          cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&) [135]
+                0.00    0.00       1/29          cl::Context::Context(unsigned long, long*, void (*)(char const*, void const*, unsigned long, void*), void*, int*) [144]
+                0.00    0.00       1/29          cl::Event::wait() const [166]
+                0.00    0.00       1/29          cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [150]
+                0.00    0.00       1/29          cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const [179]
+                0.00    0.00       1/29          cl::Kernel::Kernel(cl::Program const&, char const*, int*) [117]
+                0.00    0.00       1/29          cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*) [104]
+                0.00    0.00       1/29          cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [165]
+                0.00    0.00       1/29          cl::detail::Wrapper<_cl_program*>::operator=(cl::detail::Wrapper<_cl_program*> const&) [133]
+                0.00    0.00       1/29          int cl::Context::getInfo<std::vector<cl::Device, std::allocator<cl::Device> > >(unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) const [176]
+                0.00    0.00       1/29          int cl::Kernel::setArg<unsigned int>(unsigned int, unsigned int) [116]
+                0.00    0.00       1/29          int cl::Kernel::setArg<cl::LocalSpaceArg>(unsigned int, cl::LocalSpaceArg) [115]
+                0.00    0.00       1/29          int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const [178]
+                0.00    0.00       2/29          cl::CommandQueue::enqueueReadBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [74]
+                0.00    0.00       2/29          cl::CommandQueue::enqueueWriteBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void const*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [75]
+                0.00    0.00       3/29          cl::Buffer::Buffer(cl::Context const&, unsigned long, unsigned long, void*, int*) [30]
+                0.00    0.00       3/29          cl::detail::Wrapper<_cl_mem*>::Wrapper(cl::detail::Wrapper<_cl_mem*> const&) [39]
+                0.00    0.00       3/29          cl::detail::Wrapper<_cl_mem*>::operator=(cl::detail::Wrapper<_cl_mem*> const&) [40]
+                0.00    0.00       3/29          int cl::Kernel::setArg<cl::Buffer>(unsigned int, cl::Buffer) [34]
+[10]     0.0    0.00    0.00      29         cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/10          cl::Image::~Image() [111]
+                0.00    0.00       9/10          cl::Buffer::~Buffer() [13]
+[11]     0.0    0.00    0.00      10         cl::Memory::~Memory() [11]
+                0.00    0.00      10/10          cl::detail::Wrapper<_cl_mem*>::~Wrapper() [12]
+-----------------------------------------------
+                0.00    0.00      10/10          cl::Memory::~Memory() [11]
+[12]     0.0    0.00    0.00      10         cl::detail::Wrapper<_cl_mem*>::~Wrapper() [12]
+                0.00    0.00       9/9           cl::detail::Wrapper<_cl_mem*>::release() const [15]
+-----------------------------------------------
+                0.00    0.00       9/9           main [6]
+[13]     0.0    0.00    0.00       9         cl::Buffer::~Buffer() [13]
+                0.00    0.00       9/10          cl::Memory::~Memory() [11]
+-----------------------------------------------
+                0.00    0.00       9/9           cl::detail::Wrapper<_cl_mem*>::release() const [15]
+[14]     0.0    0.00    0.00       9         cl::detail::ReferenceHandler<_cl_mem*>::release(_cl_mem*) [14]
+-----------------------------------------------
+                0.00    0.00       9/9           cl::detail::Wrapper<_cl_mem*>::~Wrapper() [12]
+[15]     0.0    0.00    0.00       9         cl::detail::Wrapper<_cl_mem*>::release() const [15]
+                0.00    0.00       9/9           cl::detail::ReferenceHandler<_cl_mem*>::release(_cl_mem*) [14]
+-----------------------------------------------
+                0.00    0.00       1/7           cl::Image::Image() [110]
+                0.00    0.00       3/7           cl::Buffer::Buffer(cl::Context const&, unsigned long, unsigned long, void*, int*) [30]
+                0.00    0.00       3/7           cl::Buffer::Buffer() [32]
+[16]     0.0    0.00    0.00       7         cl::Memory::Memory() [16]
+                0.00    0.00       7/7           cl::detail::Wrapper<_cl_mem*>::Wrapper() [17]
+-----------------------------------------------
+                0.00    0.00       7/7           cl::Memory::Memory() [16]
+[17]     0.0    0.00    0.00       7         cl::detail::Wrapper<_cl_mem*>::Wrapper() [17]
+-----------------------------------------------
+                0.00    0.00       6/6           cl::detail::Wrapper<_cl_mem*>::retain() const [19]
+[18]     0.0    0.00    0.00       6         cl::detail::ReferenceHandler<_cl_mem*>::retain(_cl_mem*) [18]
+-----------------------------------------------
+                0.00    0.00       3/6           cl::detail::Wrapper<_cl_mem*>::Wrapper(cl::detail::Wrapper<_cl_mem*> const&) [39]
+                0.00    0.00       3/6           cl::detail::Wrapper<_cl_mem*>::operator=(cl::detail::Wrapper<_cl_mem*> const&) [40]
+[19]     0.0    0.00    0.00       6         cl::detail::Wrapper<_cl_mem*>::retain() const [19]
+                0.00    0.00       6/6           cl::detail::ReferenceHandler<_cl_mem*>::retain(_cl_mem*) [18]
+-----------------------------------------------
+                0.00    0.00       1/6           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+                0.00    0.00       1/6           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >) [213]
+                0.00    0.00       1/6           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+                0.00    0.00       1/6           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**) [214]
+                0.00    0.00       2/6           std::vector<cl::Device, std::allocator<cl::Device> >::~vector() [96]
+[20]     0.0    0.00    0.00       6         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator() [20]
+-----------------------------------------------
+                0.00    0.00       1/5           cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [150]
+                0.00    0.00       1/5           cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*) [104]
+                0.00    0.00       3/5           cl::Buffer::Buffer(cl::Context const&, unsigned long, unsigned long, void*, int*) [30]
+[21]     0.0    0.00    0.00       5         cl::detail::Wrapper<_cl_context*>::operator()() const [21]
+-----------------------------------------------
+                0.00    0.00       2/4           cl::CommandQueue::enqueueReadBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [74]
+                0.00    0.00       2/4           cl::CommandQueue::enqueueWriteBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void const*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [75]
+[22]     0.0    0.00    0.00       4         cl::detail::Wrapper<_cl_mem*>::operator()() const [22]
+-----------------------------------------------
+                0.00    0.00       4/4           bool __gnu_cxx::operator!=<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&) [73]
+[23]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::base() const [23]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<cl::Device*>(cl::Device*, cl::Device*) [27]
+[24]     0.0    0.00    0.00       4         void std::_Destroy_aux<false>::__destroy<cl::Device*>(cl::Device*, cl::Device*) [24]
+                0.00    0.00       2/4           cl::Device* std::__addressof<cl::Device>(cl::Device&) [26]
+                0.00    0.00       2/2           void std::_Destroy<cl::Device>(cl::Device*) [98]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+                0.00    0.00       1/4           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+                0.00    0.00       2/4           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::~_Vector_base() [92]
+[25]     0.0    0.00    0.00       4         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long) [25]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<cl::Device>::deallocate(cl::Device*, unsigned long) [67]
+-----------------------------------------------
+                0.00    0.00       1/4           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+                0.00    0.00       1/4           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [207]
+                0.00    0.00       2/4           void std::_Destroy_aux<false>::__destroy<cl::Device*>(cl::Device*, cl::Device*) [24]
+[26]     0.0    0.00    0.00       4         cl::Device* std::__addressof<cl::Device>(cl::Device&) [26]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&) [28]
+[27]     0.0    0.00    0.00       4         void std::_Destroy<cl::Device*>(cl::Device*, cl::Device*) [27]
+                0.00    0.00       4/4           void std::_Destroy_aux<false>::__destroy<cl::Device*>(cl::Device*, cl::Device*) [24]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+                0.00    0.00       1/4           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+                0.00    0.00       2/4           std::vector<cl::Device, std::allocator<cl::Device> >::~vector() [96]
+[28]     0.0    0.00    0.00       4         void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&) [28]
+                0.00    0.00       4/4           void std::_Destroy<cl::Device*>(cl::Device*, cl::Device*) [27]
+-----------------------------------------------
+                0.00    0.00       1/4           void std::_Construct<cl::Device, cl::Device>(cl::Device*, cl::Device const&) [228]
+                0.00    0.00       1/4           void std::_Construct<std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> const&) [230]
+                0.00    0.00       1/4           void std::_Construct<cl::Device, _cl_device_id*>(cl::Device*, _cl_device_id* const&) [227]
+                0.00    0.00       1/4           void std::_Construct<cl::Platform, _cl_platform_id*>(cl::Platform*, _cl_platform_id* const&) [229]
+[29]     0.0    0.00    0.00       4         operator new(unsigned long, void*) [29]
+-----------------------------------------------
+                0.00    0.00       3/3           main [6]
+[30]     0.0    0.00    0.00       3         cl::Buffer::Buffer(cl::Context const&, unsigned long, unsigned long, void*, int*) [30]
+                0.00    0.00       3/7           cl::Memory::Memory() [16]
+                0.00    0.00       3/5           cl::detail::Wrapper<_cl_context*>::operator()() const [21]
+                0.00    0.00       3/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       3/3           main [6]
+[31]     0.0    0.00    0.00       3         cl::Buffer::Buffer(cl::Buffer const&) [31]
+                0.00    0.00       3/3           cl::Memory::Memory(cl::Memory const&) [35]
+-----------------------------------------------
+                0.00    0.00       3/3           main [6]
+[32]     0.0    0.00    0.00       3         cl::Buffer::Buffer() [32]
+                0.00    0.00       3/7           cl::Memory::Memory() [16]
+-----------------------------------------------
+                0.00    0.00       3/3           main [6]
+[33]     0.0    0.00    0.00       3         cl::Buffer::operator=(cl::Buffer const&) [33]
+                0.00    0.00       3/3           cl::Memory::operator=(cl::Memory const&) [36]
+-----------------------------------------------
+                0.00    0.00       3/3           main [6]
+[34]     0.0    0.00    0.00       3         int cl::Kernel::setArg<cl::Buffer>(unsigned int, cl::Buffer) [34]
+                0.00    0.00       3/3           cl::detail::KernelArgumentHandler<cl::Buffer>::ptr(cl::Buffer&) [37]
+                0.00    0.00       3/3           cl::detail::KernelArgumentHandler<cl::Buffer>::size(cl::Buffer const&) [38]
+                0.00    0.00       3/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       3/3           cl::Buffer::Buffer(cl::Buffer const&) [31]
+[35]     0.0    0.00    0.00       3         cl::Memory::Memory(cl::Memory const&) [35]
+                0.00    0.00       3/3           cl::detail::Wrapper<_cl_mem*>::Wrapper(cl::detail::Wrapper<_cl_mem*> const&) [39]
+-----------------------------------------------
+                0.00    0.00       3/3           cl::Buffer::operator=(cl::Buffer const&) [33]
+[36]     0.0    0.00    0.00       3         cl::Memory::operator=(cl::Memory const&) [36]
+                0.00    0.00       3/3           cl::detail::Wrapper<_cl_mem*>::operator=(cl::detail::Wrapper<_cl_mem*> const&) [40]
+-----------------------------------------------
+                0.00    0.00       3/3           int cl::Kernel::setArg<cl::Buffer>(unsigned int, cl::Buffer) [34]
+[37]     0.0    0.00    0.00       3         cl::detail::KernelArgumentHandler<cl::Buffer>::ptr(cl::Buffer&) [37]
+-----------------------------------------------
+                0.00    0.00       3/3           int cl::Kernel::setArg<cl::Buffer>(unsigned int, cl::Buffer) [34]
+[38]     0.0    0.00    0.00       3         cl::detail::KernelArgumentHandler<cl::Buffer>::size(cl::Buffer const&) [38]
+-----------------------------------------------
+                0.00    0.00       3/3           cl::Memory::Memory(cl::Memory const&) [35]
+[39]     0.0    0.00    0.00       3         cl::detail::Wrapper<_cl_mem*>::Wrapper(cl::detail::Wrapper<_cl_mem*> const&) [39]
+                0.00    0.00       3/29          cl::detail::errHandler(int, char const*) [10]
+                0.00    0.00       3/6           cl::detail::Wrapper<_cl_mem*>::retain() const [19]
+-----------------------------------------------
+                0.00    0.00       3/3           cl::Memory::operator=(cl::Memory const&) [36]
+[40]     0.0    0.00    0.00       3         cl::detail::Wrapper<_cl_mem*>::operator=(cl::detail::Wrapper<_cl_mem*> const&) [40]
+                0.00    0.00       3/6           cl::detail::Wrapper<_cl_mem*>::retain() const [19]
+                0.00    0.00       3/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/3           cl::NDRange::NDRange() [149]
+                0.00    0.00       2/3           cl::NDRange::NDRange(unsigned long) [65]
+[41]     0.0    0.00    0.00       3         cl::size_t<3>::size_t() [41]
+-----------------------------------------------
+                0.00    0.00       1/3           cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const [179]
+                0.00    0.00       1/3           cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*) [104]
+                0.00    0.00       1/3           int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const [178]
+[42]     0.0    0.00    0.00       3         cl::detail::Wrapper<_cl_device_id*>::operator()() const [42]
+-----------------------------------------------
+                0.00    0.00       3/3           cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [165]
+[43]     0.0    0.00    0.00       3         cl::NDRange::dimensions() const [43]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+                0.00    0.00       2/3           cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const [179]
+[44]     0.0    0.00    0.00       3         std::vector<cl::Device, std::allocator<cl::Device> >::size() const [44]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<cl::Platform, std::allocator<cl::Platform> >::~vector() [222]
+                0.00    0.00       1/3           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+                0.00    0.00       1/3           cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**) [219]
+[45]     0.0    0.00    0.00       3         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_get_Tp_allocator() [45]
+-----------------------------------------------
+                0.00    0.00       1/3           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [119]
+                0.00    0.00       2/3           main [6]
+[46]     0.0    0.00    0.00       3         std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long) [46]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<cl::Device>(cl::Device*) [98]
+[47]     0.0    0.00    0.00       2         cl::Device::~Device() [47]
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_device_id*>::~Wrapper() [58]
+-----------------------------------------------
+                0.00    0.00       2/2           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [119]
+[48]     0.0    0.00    0.00       2         cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>::operator()(unsigned int, unsigned long, void*, unsigned long*) [48]
+-----------------------------------------------
+                0.00    0.00       2/2           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*> >(cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>, unsigned int, std::string*, long) [120]
+[49]     0.0    0.00    0.00       2         cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>::operator()(unsigned int, unsigned long, void*, unsigned long*) [49]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_program*>::release() const [76]
+[50]     0.0    0.00    0.00       2         cl::detail::ReferenceHandler<_cl_program*>::release(_cl_program*) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_device_id*>::retain() const [77]
+[51]     0.0    0.00    0.00       2         cl::detail::ReferenceHandler<_cl_device_id*>::retain(_cl_device_id*) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_device_id*>::release() const [78]
+[52]     0.0    0.00    0.00       2         cl::detail::ReferenceHandler<_cl_device_id*>::release(_cl_device_id*) [52]
+-----------------------------------------------
+                0.00    0.00       1/2           cl::Context::Context(unsigned long, long*, void (*)(char const*, void const*, unsigned long, void*), void*, int*) [144]
+                0.00    0.00       1/2           cl::Context::Context() [145]
+[53]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_context*>::Wrapper() [53]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::Context::~Context() [146]
+[54]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_context*>::~Wrapper() [54]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_context*>::release() const [169]
+-----------------------------------------------
+                0.00    0.00       1/2           cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [150]
+                0.00    0.00       1/2           cl::Program::Program() [151]
+[55]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_program*>::Wrapper() [55]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::Program::~Program() [66]
+[56]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_program*>::~Wrapper() [56]
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_program*>::release() const [76]
+-----------------------------------------------
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::Wrapper(_cl_device_id* const&) [134]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&) [135]
+[57]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_device_id*>::isReferenceCountable(_cl_device_id*) [57]
+                0.00    0.00       2/2           cl::detail::getDevicePlatformVersion(_cl_device_id*) [63]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::Device::~Device() [47]
+[58]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_device_id*>::~Wrapper() [58]
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_device_id*>::release() const [78]
+-----------------------------------------------
+                0.00    0.00       1/2           cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*) [104]
+                0.00    0.00       1/2           cl::CommandQueue::CommandQueue() [105]
+[59]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_command_queue*>::Wrapper() [59]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::CommandQueue::~CommandQueue() [106]
+[60]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_command_queue*>::~Wrapper() [60]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_command_queue*>::release() const [173]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::getPlatformVersion(_cl_platform_id*) [62]
+[61]     0.0    0.00    0.00       2         cl::detail::getVersion(char const*) [61]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::getDevicePlatformVersion(_cl_device_id*) [63]
+[62]     0.0    0.00    0.00       2         cl::detail::getPlatformVersion(_cl_platform_id*) [62]
+                0.00    0.00       2/2           cl::detail::getVersion(char const*) [61]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_device_id*>::isReferenceCountable(_cl_device_id*) [57]
+[63]     0.0    0.00    0.00       2         cl::detail::getDevicePlatformVersion(_cl_device_id*) [63]
+                0.00    0.00       2/2           cl::detail::getPlatformVersion(_cl_platform_id*) [62]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::NDRange::NDRange(unsigned long) [65]
+[64]     0.0    0.00    0.00       2         cl::size_t<3>::operator[](int) [64]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[65]     0.0    0.00    0.00       2         cl::NDRange::NDRange(unsigned long) [65]
+                0.00    0.00       2/3           cl::size_t<3>::size_t() [41]
+                0.00    0.00       2/2           cl::size_t<3>::operator[](int) [64]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[66]     0.0    0.00    0.00       2         cl::Program::~Program() [66]
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_program*>::~Wrapper() [56]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long) [25]
+[67]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<cl::Device>::deallocate(cl::Device*, unsigned long) [67]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_allocate(unsigned long) [88]
+[68]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<cl::Device>::allocate(unsigned long, void const*) [68]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<cl::Device>::max_size() const [81]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<cl::Device>::allocator() [84]
+[69]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<cl::Device>::new_allocator() [69]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<cl::Device>::~allocator() [85]
+[70]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<cl::Device>::~new_allocator() [70]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::pair<char const*, unsigned long> >::~allocator() [86]
+[71]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::~new_allocator() [71]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<cl::Device, std::allocator<cl::Device> >::begin() const [184]
+                0.00    0.00       1/2           std::vector<cl::Device, std::allocator<cl::Device> >::end() const [183]
+[72]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::__normal_iterator(cl::Device const* const&) [72]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+[73]     0.0    0.00    0.00       2         bool __gnu_cxx::operator!=<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&) [73]
+                0.00    0.00       4/4           __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::base() const [23]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[74]     0.0    0.00    0.00       2         cl::CommandQueue::enqueueReadBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [74]
+                0.00    0.00       2/4           cl::detail::Wrapper<_cl_mem*>::operator()() const [22]
+                0.00    0.00       2/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[75]     0.0    0.00    0.00       2         cl::CommandQueue::enqueueWriteBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void const*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [75]
+                0.00    0.00       2/4           cl::detail::Wrapper<_cl_mem*>::operator()() const [22]
+                0.00    0.00       2/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_program*>::~Wrapper() [56]
+[76]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_program*>::release() const [76]
+                0.00    0.00       2/2           cl::detail::ReferenceHandler<_cl_program*>::release(_cl_program*) [50]
+-----------------------------------------------
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&) [135]
+                0.00    0.00       1/2           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [119]
+[77]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_device_id*>::retain() const [77]
+                0.00    0.00       2/2           cl::detail::ReferenceHandler<_cl_device_id*>::retain(_cl_device_id*) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_device_id*>::~Wrapper() [58]
+[78]     0.0    0.00    0.00       2         cl::detail::Wrapper<_cl_device_id*>::release() const [78]
+                0.00    0.00       2/2           cl::detail::ReferenceHandler<_cl_device_id*>::release(_cl_device_id*) [52]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::NDRange::operator unsigned long const*() const [80]
+[79]     0.0    0.00    0.00       2         cl::size_t<3>::operator unsigned long const*() const [79]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [165]
+[80]     0.0    0.00    0.00       2         cl::NDRange::operator unsigned long const*() const [80]
+                0.00    0.00       2/2           cl::size_t<3>::operator unsigned long const*() const [79]
+-----------------------------------------------
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<cl::Device>::allocate(unsigned long, void const*) [68]
+[81]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<cl::Device>::max_size() const [81]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+                0.00    0.00       1/2           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+[82]     0.0    0.00    0.00       2         std::vector<cl::Device, std::allocator<cl::Device> >::capacity() const [82]
+-----------------------------------------------
+                0.00    0.00       2/2           cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [150]
+[83]     0.0    0.00    0.00       2         std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::operator[](unsigned long) const [83]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::_Vector_impl() [89]
+[84]     0.0    0.00    0.00       2         std::allocator<cl::Device>::allocator() [84]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<cl::Device>::new_allocator() [69]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::~_Vector_impl() [90]
+[85]     0.0    0.00    0.00       2         std::allocator<cl::Device>::~allocator() [85]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<cl::Device>::~new_allocator() [70]
+-----------------------------------------------
+                0.00    0.00       1/2           main [6]
+                0.00    0.00       1/2           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::~_Vector_impl() [201]
+[86]     0.0    0.00    0.00       2         std::allocator<std::pair<char const*, unsigned long> >::~allocator() [86]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::~new_allocator() [71]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [99]
+[87]     0.0    0.00    0.00       2         void std::_Destroy_aux<false>::__destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [87]
+                0.00    0.00       1/2           cl::Platform* std::__addressof<cl::Platform>(cl::Platform&) [97]
+                0.00    0.00       1/1           void std::_Destroy<cl::Platform>(cl::Platform*) [244]
+-----------------------------------------------
+                0.00    0.00       1/2           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >) [213]
+                0.00    0.00       1/2           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**) [214]
+[88]     0.0    0.00    0.00       2         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_allocate(unsigned long) [88]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<cl::Device>::allocate(unsigned long, void const*) [68]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_base() [91]
+[89]     0.0    0.00    0.00       2         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::_Vector_impl() [89]
+                0.00    0.00       2/2           std::allocator<cl::Device>::allocator() [84]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::~_Vector_base() [92]
+[90]     0.0    0.00    0.00       2         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::~_Vector_impl() [90]
+                0.00    0.00       2/2           std::allocator<cl::Device>::~allocator() [85]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<cl::Device, std::allocator<cl::Device> >::vector() [95]
+[91]     0.0    0.00    0.00       2         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_base() [91]
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::_Vector_impl() [89]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<cl::Device, std::allocator<cl::Device> >::~vector() [96]
+[92]     0.0    0.00    0.00       2         std::_Vector_base<cl::Device, std::allocator<cl::Device> >::~_Vector_base() [92]
+                0.00    0.00       2/4           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long) [25]
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::~_Vector_impl() [90]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::~_Vector_base() [198]
+                0.00    0.00       1/2           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+[93]     0.0    0.00    0.00       2         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_deallocate(cl::Platform*, unsigned long) [93]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cl::Platform>::deallocate(cl::Platform*, unsigned long) [156]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~vector() [226]
+                0.00    0.00       1/2           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_fill_initialize(unsigned long, std::pair<char const*, unsigned long> const&) [224]
+[94]     0.0    0.00    0.00       2         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_get_Tp_allocator() [94]
+-----------------------------------------------
+                0.00    0.00       1/2           main [6]
+                0.00    0.00       1/2           cl::detail::param_traits<cl::detail::cl_context_info, 4225>::param_type cl::Context::getInfo<4225>(int*) const [175]
+[95]     0.0    0.00    0.00       2         std::vector<cl::Device, std::allocator<cl::Device> >::vector() [95]
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_base() [91]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[96]     0.0    0.00    0.00       2         std::vector<cl::Device, std::allocator<cl::Device> >::~vector() [96]
+                0.00    0.00       2/6           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator() [20]
+                0.00    0.00       2/4           void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&) [28]
+                0.00    0.00       2/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::~_Vector_base() [92]
+-----------------------------------------------
+                0.00    0.00       1/2           void std::_Destroy_aux<false>::__destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [87]
+                0.00    0.00       1/2           cl::Platform* std::__uninitialized_copy<false>::__uninit_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [208]
+[97]     0.0    0.00    0.00       2         cl::Platform* std::__addressof<cl::Platform>(cl::Platform&) [97]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy_aux<false>::__destroy<cl::Device*>(cl::Device*, cl::Device*) [24]
+[98]     0.0    0.00    0.00       2         void std::_Destroy<cl::Device>(cl::Device*) [98]
+                0.00    0.00       2/2           cl::Device::~Device() [47]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<cl::Platform*, cl::Platform>(cl::Platform*, cl::Platform*, std::allocator<cl::Platform>&) [100]
+[99]     0.0    0.00    0.00       2         void std::_Destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [99]
+                0.00    0.00       2/2           void std::_Destroy_aux<false>::__destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [87]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<cl::Platform, std::allocator<cl::Platform> >::~vector() [222]
+                0.00    0.00       1/2           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+[100]    0.0    0.00    0.00       2         void std::_Destroy<cl::Platform*, cl::Platform>(cl::Platform*, cl::Platform*, std::allocator<cl::Platform>&) [100]
+                0.00    0.00       2/2           void std::_Destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [99]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[101]    0.0    0.00    0.00       2         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [101]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [328]
+[102]    0.0    0.00    0.00       1         _GLOBAL__sub_I_main [102]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [103]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [102]
+[103]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [103]
+                0.00    0.00       1/1           cl::Context::Context() [145]
+                0.00    0.00       1/1           cl::NDRange::NDRange() [149]
+                0.00    0.00       1/1           cl::CommandQueue::CommandQueue() [105]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[104]    0.0    0.00    0.00       1         cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*) [104]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_command_queue*>::Wrapper() [59]
+                0.00    0.00       1/5           cl::detail::Wrapper<_cl_context*>::operator()() const [21]
+                0.00    0.00       1/3           cl::detail::Wrapper<_cl_device_id*>::operator()() const [42]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [103]
+[105]    0.0    0.00    0.00       1         cl::CommandQueue::CommandQueue() [105]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_command_queue*>::Wrapper() [59]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[106]    0.0    0.00    0.00       1         cl::CommandQueue::~CommandQueue() [106]
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_command_queue*>::~Wrapper() [60]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[107]    0.0    0.00    0.00       1         cl::Event::Event() [107]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_event*>::Wrapper() [139]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[108]    0.0    0.00    0.00       1         cl::Event::~Event() [108]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_event*>::~Wrapper() [140]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [165]
+[109]    0.0    0.00    0.00       1         cl::Event::operator=(_cl_event* const&) [109]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_event*>::operator=(_cl_event* const&) [141]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Image2D::Image2D() [147]
+[110]    0.0    0.00    0.00       1         cl::Image::Image() [110]
+                0.00    0.00       1/7           cl::Memory::Memory() [16]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Image2D::~Image2D() [148]
+[111]    0.0    0.00    0.00       1         cl::Image::~Image() [111]
+                0.00    0.00       1/10          cl::Memory::~Memory() [11]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[112]    0.0    0.00    0.00       1         cl::Local(unsigned long) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Construct<cl::Device, cl::Device>(cl::Device*, cl::Device const&) [228]
+[113]    0.0    0.00    0.00       1         cl::Device::Device(cl::Device const&) [113]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&) [135]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Construct<cl::Device, _cl_device_id*>(cl::Device*, _cl_device_id* const&) [227]
+[114]    0.0    0.00    0.00       1         cl::Device::Device(_cl_device_id* const&) [114]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_device_id*>::Wrapper(_cl_device_id* const&) [134]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[115]    0.0    0.00    0.00       1         int cl::Kernel::setArg<cl::LocalSpaceArg>(unsigned int, cl::LocalSpaceArg) [115]
+                0.00    0.00       1/1           cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::ptr(cl::LocalSpaceArg&) [127]
+                0.00    0.00       1/1           cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::size(cl::LocalSpaceArg const&) [128]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[116]    0.0    0.00    0.00       1         int cl::Kernel::setArg<unsigned int>(unsigned int, unsigned int) [116]
+                0.00    0.00       1/1           cl::detail::KernelArgumentHandler<unsigned int>::ptr(unsigned int&) [129]
+                0.00    0.00       1/1           cl::detail::KernelArgumentHandler<unsigned int>::size(unsigned int const&) [130]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[117]    0.0    0.00    0.00       1         cl::Kernel::Kernel(cl::Program const&, char const*, int*) [117]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_kernel*>::Wrapper() [131]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_program*>::operator()() const [171]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[118]    0.0    0.00    0.00       1         cl::Kernel::~Kernel() [118]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_kernel*>::~Wrapper() [132]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::detail::getInfo<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*, std::vector<cl::Device, std::allocator<cl::Device> > >(int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context* const&, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) [142]
+[119]    0.0    0.00    0.00       1         int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [119]
+                0.00    0.00       2/2           cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>::operator()(unsigned int, unsigned long, void*, unsigned long*) [48]
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::assign<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [215]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::retain() const [77]
+                0.00    0.00       1/3           std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::detail::getInfo<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*, std::string>(int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program* const&, _cl_device_id* const&, unsigned int, std::string*) [143]
+[120]    0.0    0.00    0.00       1         int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*> >(cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>, unsigned int, std::string*, long) [120]
+                0.00    0.00       2/2           cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>::operator()(unsigned int, unsigned long, void*, unsigned long*) [49]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_kernel*>::release() const [167]
+[121]    0.0    0.00    0.00       1         cl::detail::ReferenceHandler<_cl_kernel*>::release(_cl_kernel*) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_context*>::release() const [169]
+[122]    0.0    0.00    0.00       1         cl::detail::ReferenceHandler<_cl_context*>::release(_cl_context*) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_program*>::retain() const [170]
+[123]    0.0    0.00    0.00       1         cl::detail::ReferenceHandler<_cl_program*>::retain(_cl_program*) [123]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_platform_id*>::release() const [172]
+[124]    0.0    0.00    0.00       1         cl::detail::ReferenceHandler<_cl_platform_id*>::release(_cl_platform_id*) [124]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_command_queue*>::release() const [173]
+[125]    0.0    0.00    0.00       1         cl::detail::ReferenceHandler<_cl_command_queue*>::release(_cl_command_queue*) [125]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_event*>::release() const [174]
+[126]    0.0    0.00    0.00       1         cl::detail::ReferenceHandler<_cl_event*>::release(_cl_event*) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::Kernel::setArg<cl::LocalSpaceArg>(unsigned int, cl::LocalSpaceArg) [115]
+[127]    0.0    0.00    0.00       1         cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::ptr(cl::LocalSpaceArg&) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::Kernel::setArg<cl::LocalSpaceArg>(unsigned int, cl::LocalSpaceArg) [115]
+[128]    0.0    0.00    0.00       1         cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::size(cl::LocalSpaceArg const&) [128]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::Kernel::setArg<unsigned int>(unsigned int, unsigned int) [116]
+[129]    0.0    0.00    0.00       1         cl::detail::KernelArgumentHandler<unsigned int>::ptr(unsigned int&) [129]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::Kernel::setArg<unsigned int>(unsigned int, unsigned int) [116]
+[130]    0.0    0.00    0.00       1         cl::detail::KernelArgumentHandler<unsigned int>::size(unsigned int const&) [130]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Kernel::Kernel(cl::Program const&, char const*, int*) [117]
+[131]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_kernel*>::Wrapper() [131]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Kernel::~Kernel() [118]
+[132]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_kernel*>::~Wrapper() [132]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_kernel*>::release() const [167]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Program::operator=(cl::Program const&) [152]
+[133]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_program*>::operator=(cl::detail::Wrapper<_cl_program*> const&) [133]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_program*>::retain() const [170]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device::Device(_cl_device_id* const&) [114]
+[134]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_device_id*>::Wrapper(_cl_device_id* const&) [134]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::isReferenceCountable(_cl_device_id*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device::Device(cl::Device const&) [113]
+[135]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&) [135]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::isReferenceCountable(_cl_device_id*) [57]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_device_id*>::retain() const [77]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform::Platform(_cl_platform_id* const&) [154]
+[136]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_platform_id*>::Wrapper(_cl_platform_id* const&) [136]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform::~Platform() [155]
+[137]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_platform_id*>::~Wrapper() [137]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_platform_id*>::release() const [172]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[138]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_platform_id*>::operator()() [138]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Event::Event() [107]
+[139]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_event*>::Wrapper() [139]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Event::~Event() [108]
+[140]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_event*>::~Wrapper() [140]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_event*>::release() const [174]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Event::operator=(_cl_event* const&) [109]
+[141]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_event*>::operator=(_cl_event* const&) [141]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::Context::getInfo<std::vector<cl::Device, std::allocator<cl::Device> > >(unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) const [176]
+[142]    0.0    0.00    0.00       1         int cl::detail::getInfo<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*, std::vector<cl::Device, std::allocator<cl::Device> > >(int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context* const&, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) [142]
+                0.00    0.00       1/1           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [119]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const [178]
+[143]    0.0    0.00    0.00       1         int cl::detail::getInfo<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*, std::string>(int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program* const&, _cl_device_id* const&, unsigned int, std::string*) [143]
+                0.00    0.00       1/1           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*> >(cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>, unsigned int, std::string*, long) [120]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[144]    0.0    0.00    0.00       1         cl::Context::Context(unsigned long, long*, void (*)(char const*, void const*, unsigned long, void*), void*, int*) [144]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_context*>::Wrapper() [53]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [103]
+[145]    0.0    0.00    0.00       1         cl::Context::Context() [145]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_context*>::Wrapper() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[146]    0.0    0.00    0.00       1         cl::Context::~Context() [146]
+                0.00    0.00       2/2           cl::detail::Wrapper<_cl_context*>::~Wrapper() [54]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[147]    0.0    0.00    0.00       1         cl::Image2D::Image2D() [147]
+                0.00    0.00       1/1           cl::Image::Image() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[148]    0.0    0.00    0.00       1         cl::Image2D::~Image2D() [148]
+                0.00    0.00       1/1           cl::Image::~Image() [111]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [103]
+[149]    0.0    0.00    0.00       1         cl::NDRange::NDRange() [149]
+                0.00    0.00       1/3           cl::size_t<3>::size_t() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[150]    0.0    0.00    0.00       1         cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [150]
+                0.00    0.00       2/2           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::operator[](unsigned long) const [83]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_program*>::Wrapper() [55]
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::size() const [188]
+                0.00    0.00       1/5           cl::detail::Wrapper<_cl_context*>::operator()() const [21]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[151]    0.0    0.00    0.00       1         cl::Program::Program() [151]
+                0.00    0.00       1/2           cl::detail::Wrapper<_cl_program*>::Wrapper() [55]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[152]    0.0    0.00    0.00       1         cl::Program::operator=(cl::Program const&) [152]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_program*>::operator=(cl::detail::Wrapper<_cl_program*> const&) [133]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[153]    0.0    0.00    0.00       1         cl::Platform::get(std::vector<cl::Platform, std::allocator<cl::Platform> >*) [153]
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::assign<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [220]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Construct<cl::Platform, _cl_platform_id*>(cl::Platform*, _cl_platform_id* const&) [229]
+[154]    0.0    0.00    0.00       1         cl::Platform::Platform(_cl_platform_id* const&) [154]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_platform_id*>::Wrapper(_cl_platform_id* const&) [136]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<cl::Platform>(cl::Platform*) [244]
+[155]    0.0    0.00    0.00       1         cl::Platform::~Platform() [155]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_platform_id*>::~Wrapper() [137]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_deallocate(cl::Platform*, unsigned long) [93]
+[156]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cl::Platform>::deallocate(cl::Platform*, unsigned long) [156]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_allocate(unsigned long) [194]
+[157]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cl::Platform>::allocate(unsigned long, void const*) [157]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cl::Platform>::max_size() const [180]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<cl::Platform>::allocator() [189]
+[158]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cl::Platform>::new_allocator() [158]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<cl::Platform>::~allocator() [190]
+[159]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cl::Platform>::~new_allocator() [159]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_deallocate(std::pair<char const*, unsigned long>*, unsigned long) [202]
+[160]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::deallocate(std::pair<char const*, unsigned long>*, unsigned long) [160]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_allocate(unsigned long) [199]
+[161]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::allocate(unsigned long, void const*) [161]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::max_size() const [181]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::pair<char const*, unsigned long> >::allocator(std::allocator<std::pair<char const*, unsigned long> > const&) [192]
+[162]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator(__gnu_cxx::new_allocator<std::pair<char const*, unsigned long> > const&) [162]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::pair<char const*, unsigned long> >::allocator() [191]
+[163]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator() [163]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+[164]    0.0    0.00    0.00       1         __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator++() [164]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[165]    0.0    0.00    0.00       1         cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [165]
+                0.00    0.00       3/3           cl::NDRange::dimensions() const [43]
+                0.00    0.00       2/2           cl::NDRange::operator unsigned long const*() const [80]
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_kernel*>::operator()() const [168]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+                0.00    0.00       1/1           cl::Event::operator=(_cl_event* const&) [109]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[166]    0.0    0.00    0.00       1         cl::Event::wait() const [166]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_kernel*>::~Wrapper() [132]
+[167]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_kernel*>::release() const [167]
+                0.00    0.00       1/1           cl::detail::ReferenceHandler<_cl_kernel*>::release(_cl_kernel*) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [165]
+[168]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_kernel*>::operator()() const [168]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_context*>::~Wrapper() [54]
+[169]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_context*>::release() const [169]
+                0.00    0.00       1/1           cl::detail::ReferenceHandler<_cl_context*>::release(_cl_context*) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_program*>::operator=(cl::detail::Wrapper<_cl_program*> const&) [133]
+[170]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_program*>::retain() const [170]
+                0.00    0.00       1/1           cl::detail::ReferenceHandler<_cl_program*>::retain(_cl_program*) [123]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Kernel::Kernel(cl::Program const&, char const*, int*) [117]
+[171]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_program*>::operator()() const [171]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_platform_id*>::~Wrapper() [137]
+[172]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_platform_id*>::release() const [172]
+                0.00    0.00       1/1           cl::detail::ReferenceHandler<_cl_platform_id*>::release(_cl_platform_id*) [124]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_command_queue*>::~Wrapper() [60]
+[173]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_command_queue*>::release() const [173]
+                0.00    0.00       1/1           cl::detail::ReferenceHandler<_cl_command_queue*>::release(_cl_command_queue*) [125]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::Wrapper<_cl_event*>::~Wrapper() [140]
+[174]    0.0    0.00    0.00       1         cl::detail::Wrapper<_cl_event*>::release() const [174]
+                0.00    0.00       1/1           cl::detail::ReferenceHandler<_cl_event*>::release(_cl_event*) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[175]    0.0    0.00    0.00       1         cl::detail::param_traits<cl::detail::cl_context_info, 4225>::param_type cl::Context::getInfo<4225>(int*) const [175]
+                0.00    0.00       1/2           std::vector<cl::Device, std::allocator<cl::Device> >::vector() [95]
+                0.00    0.00       1/1           int cl::Context::getInfo<std::vector<cl::Device, std::allocator<cl::Device> > >(unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) const [176]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::param_traits<cl::detail::cl_context_info, 4225>::param_type cl::Context::getInfo<4225>(int*) const [175]
+[176]    0.0    0.00    0.00       1         int cl::Context::getInfo<std::vector<cl::Device, std::allocator<cl::Device> > >(unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) const [176]
+                0.00    0.00       1/1           int cl::detail::getInfo<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*, std::vector<cl::Device, std::allocator<cl::Device> > >(int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context* const&, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) [142]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[177]    0.0    0.00    0.00       1         cl::detail::param_traits<cl::detail::cl_program_build_info, 4483>::param_type cl::Program::getBuildInfo<4483>(cl::Device const&, int*) const [177]
+                0.00    0.00       1/1           int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const [178]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::detail::param_traits<cl::detail::cl_program_build_info, 4483>::param_type cl::Program::getBuildInfo<4483>(cl::Device const&, int*) const [177]
+[178]    0.0    0.00    0.00       1         int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const [178]
+                0.00    0.00       1/3           cl::detail::Wrapper<_cl_device_id*>::operator()() const [42]
+                0.00    0.00       1/1           int cl::detail::getInfo<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*, std::string>(int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program* const&, _cl_device_id* const&, unsigned int, std::string*) [143]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[179]    0.0    0.00    0.00       1         cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const [179]
+                0.00    0.00       2/3           std::vector<cl::Device, std::allocator<cl::Device> >::size() const [44]
+                0.00    0.00       1/3           cl::detail::Wrapper<_cl_device_id*>::operator()() const [42]
+                0.00    0.00       1/1           std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long) const [185]
+                0.00    0.00       1/29          cl::detail::errHandler(int, char const*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cl::Platform>::allocate(unsigned long, void const*) [157]
+[180]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cl::Platform>::max_size() const [180]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::allocate(unsigned long, void const*) [161]
+[181]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::max_size() const [181]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+[182]    0.0    0.00    0.00       1         __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator*() const [182]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+[183]    0.0    0.00    0.00       1         std::vector<cl::Device, std::allocator<cl::Device> >::end() const [183]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::__normal_iterator(cl::Device const* const&) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+[184]    0.0    0.00    0.00       1         std::vector<cl::Device, std::allocator<cl::Device> >::begin() const [184]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::__normal_iterator(cl::Device const* const&) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const [179]
+[185]    0.0    0.00    0.00       1         std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long) const [185]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[186]    0.0    0.00    0.00       1         std::vector<cl::Platform, std::allocator<cl::Platform> >::size() const [186]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+[187]    0.0    0.00    0.00       1         std::vector<cl::Platform, std::allocator<cl::Platform> >::capacity() const [187]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [150]
+[188]    0.0    0.00    0.00       1         std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::size() const [188]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::_Vector_impl() [195]
+[189]    0.0    0.00    0.00       1         std::allocator<cl::Platform>::allocator() [189]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cl::Platform>::new_allocator() [158]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::~_Vector_impl() [196]
+[190]    0.0    0.00    0.00       1         std::allocator<cl::Platform>::~allocator() [190]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cl::Platform>::~new_allocator() [159]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[191]    0.0    0.00    0.00       1         std::allocator<std::pair<char const*, unsigned long> >::allocator() [191]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator() [163]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<char const*, unsigned long> > const&) [200]
+[192]    0.0    0.00    0.00       1         std::allocator<std::pair<char const*, unsigned long> >::allocator(std::allocator<std::pair<char const*, unsigned long> > const&) [192]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator(__gnu_cxx::new_allocator<std::pair<char const*, unsigned long> > const&) [162]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*) [245]
+[193]    0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*) [193]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**) [219]
+[194]    0.0    0.00    0.00       1         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_allocate(unsigned long) [194]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cl::Platform>::allocate(unsigned long, void const*) [157]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_base() [197]
+[195]    0.0    0.00    0.00       1         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::_Vector_impl() [195]
+                0.00    0.00       1/1           std::allocator<cl::Platform>::allocator() [189]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::~_Vector_base() [198]
+[196]    0.0    0.00    0.00       1         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::~_Vector_impl() [196]
+                0.00    0.00       1/1           std::allocator<cl::Platform>::~allocator() [190]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cl::Platform, std::allocator<cl::Platform> >::vector() [221]
+[197]    0.0    0.00    0.00       1         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_base() [197]
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::_Vector_impl() [195]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cl::Platform, std::allocator<cl::Platform> >::~vector() [222]
+[198]    0.0    0.00    0.00       1         std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::~_Vector_base() [198]
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::~_Vector_impl() [196]
+                0.00    0.00       1/2           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_deallocate(cl::Platform*, unsigned long) [93]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_create_storage(unsigned long) [203]
+[199]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_allocate(unsigned long) [199]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::allocate(unsigned long, void const*) [161]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_base(unsigned long, std::allocator<std::pair<char const*, unsigned long> > const&) [204]
+[200]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<char const*, unsigned long> > const&) [200]
+                0.00    0.00       1/1           std::allocator<std::pair<char const*, unsigned long> >::allocator(std::allocator<std::pair<char const*, unsigned long> > const&) [192]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~_Vector_base() [205]
+[201]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::~_Vector_impl() [201]
+                0.00    0.00       1/2           std::allocator<std::pair<char const*, unsigned long> >::~allocator() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~_Vector_base() [205]
+[202]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_deallocate(std::pair<char const*, unsigned long>*, unsigned long) [202]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::deallocate(std::pair<char const*, unsigned long>*, unsigned long) [160]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_base(unsigned long, std::allocator<std::pair<char const*, unsigned long> > const&) [204]
+[203]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_create_storage(unsigned long) [203]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_allocate(unsigned long) [199]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::vector(unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> > const&) [225]
+[204]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_base(unsigned long, std::allocator<std::pair<char const*, unsigned long> > const&) [204]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<char const*, unsigned long> > const&) [200]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_create_storage(unsigned long) [203]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~vector() [226]
+[205]    0.0    0.00    0.00       1         std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~_Vector_base() [205]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_deallocate(std::pair<char const*, unsigned long>*, unsigned long) [202]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::~_Vector_impl() [201]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::uninitialized_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [234]
+[206]    0.0    0.00    0.00       1         cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+                0.00    0.00       2/2           bool __gnu_cxx::operator!=<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&) [73]
+                0.00    0.00       1/1           __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator*() const [182]
+                0.00    0.00       1/4           cl::Device* std::__addressof<cl::Device>(cl::Device&) [26]
+                0.00    0.00       1/1           void std::_Construct<cl::Device, cl::Device>(cl::Device*, cl::Device const&) [228]
+                0.00    0.00       1/1           __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator++() [164]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::uninitialized_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [235]
+[207]    0.0    0.00    0.00       1         cl::Device* std::__uninitialized_copy<false>::__uninit_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [207]
+                0.00    0.00       1/4           cl::Device* std::__addressof<cl::Device>(cl::Device&) [26]
+                0.00    0.00       1/1           void std::_Construct<cl::Device, _cl_device_id*>(cl::Device*, _cl_device_id* const&) [227]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform* std::uninitialized_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [236]
+[208]    0.0    0.00    0.00       1         cl::Platform* std::__uninitialized_copy<false>::__uninit_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [208]
+                0.00    0.00       1/2           cl::Platform* std::__addressof<cl::Platform>(cl::Platform&) [97]
+                0.00    0.00       1/1           void std::_Construct<cl::Platform, _cl_platform_id*>(cl::Platform*, _cl_platform_id* const&) [229]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::uninitialized_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [239]
+[209]    0.0    0.00    0.00       1         void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [209]
+                0.00    0.00       1/1           std::pair<char const*, unsigned long>* std::__addressof<std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>&) [233]
+                0.00    0.00       1/1           void std::_Construct<std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> const&) [230]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<char const*, unsigned long> std::make_pair<char const*, unsigned long>(char const*, unsigned long) [249]
+[210]    0.0    0.00    0.00       1         std::pair<char const*, unsigned long>::pair(char const* const&, unsigned long const&) [210]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_dispatch<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::__false_type) [212]
+[211]    0.0    0.00    0.00       1         void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+                0.00    0.00       1/1           std::iterator_traits<_cl_device_id**>::difference_type std::distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [247]
+                0.00    0.00       1/2           std::vector<cl::Device, std::allocator<cl::Device> >::capacity() const [82]
+                0.00    0.00       1/1           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**) [214]
+                0.00    0.00       1/6           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator() [20]
+                0.00    0.00       1/4           void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&) [28]
+                0.00    0.00       1/4           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::assign<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [215]
+[212]    0.0    0.00    0.00       1         void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_dispatch<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::__false_type) [212]
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+[213]    0.0    0.00    0.00       1         cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >) [213]
+                0.00    0.00       1/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_allocate(unsigned long) [88]
+                0.00    0.00       1/6           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator() [20]
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, cl::Device>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, std::allocator<cl::Device>&) [240]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+[214]    0.0    0.00    0.00       1         cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**) [214]
+                0.00    0.00       1/2           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_allocate(unsigned long) [88]
+                0.00    0.00       1/6           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator() [20]
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy_a<_cl_device_id**, cl::Device*, cl::Device>(_cl_device_id**, _cl_device_id**, cl::Device*, std::allocator<cl::Device>&) [241]
+-----------------------------------------------
+                0.00    0.00       1/1           int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [119]
+[215]    0.0    0.00    0.00       1         void std::vector<cl::Device, std::allocator<cl::Device> >::assign<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [215]
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_dispatch<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::__false_type) [212]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[216]    0.0    0.00    0.00       1         std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&) [216]
+                0.00    0.00       1/3           std::vector<cl::Device, std::allocator<cl::Device> >::size() const [44]
+                0.00    0.00       1/2           std::vector<cl::Device, std::allocator<cl::Device> >::capacity() const [82]
+                0.00    0.00       1/1           std::vector<cl::Device, std::allocator<cl::Device> >::end() const [183]
+                0.00    0.00       1/1           std::vector<cl::Device, std::allocator<cl::Device> >::begin() const [184]
+                0.00    0.00       1/1           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >) [213]
+                0.00    0.00       1/6           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator() [20]
+                0.00    0.00       1/4           void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&) [28]
+                0.00    0.00       1/4           std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_dispatch<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::__false_type) [218]
+[217]    0.0    0.00    0.00       1         void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+                0.00    0.00       1/1           std::iterator_traits<_cl_platform_id**>::difference_type std::distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [248]
+                0.00    0.00       1/1           std::vector<cl::Platform, std::allocator<cl::Platform> >::capacity() const [187]
+                0.00    0.00       1/1           cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**) [219]
+                0.00    0.00       1/3           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_get_Tp_allocator() [45]
+                0.00    0.00       1/2           void std::_Destroy<cl::Platform*, cl::Platform>(cl::Platform*, cl::Platform*, std::allocator<cl::Platform>&) [100]
+                0.00    0.00       1/2           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_deallocate(cl::Platform*, unsigned long) [93]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::assign<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [220]
+[218]    0.0    0.00    0.00       1         void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_dispatch<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::__false_type) [218]
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+[219]    0.0    0.00    0.00       1         cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**) [219]
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_allocate(unsigned long) [194]
+                0.00    0.00       1/3           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_get_Tp_allocator() [45]
+                0.00    0.00       1/1           cl::Platform* std::__uninitialized_copy_a<_cl_platform_id**, cl::Platform*, cl::Platform>(_cl_platform_id**, _cl_platform_id**, cl::Platform*, std::allocator<cl::Platform>&) [242]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform::get(std::vector<cl::Platform, std::allocator<cl::Platform> >*) [153]
+[220]    0.0    0.00    0.00       1         void std::vector<cl::Platform, std::allocator<cl::Platform> >::assign<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [220]
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_dispatch<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::__false_type) [218]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[221]    0.0    0.00    0.00       1         std::vector<cl::Platform, std::allocator<cl::Platform> >::vector() [221]
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_base() [197]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[222]    0.0    0.00    0.00       1         std::vector<cl::Platform, std::allocator<cl::Platform> >::~vector() [222]
+                0.00    0.00       1/3           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_get_Tp_allocator() [45]
+                0.00    0.00       1/2           void std::_Destroy<cl::Platform*, cl::Platform>(cl::Platform*, cl::Platform*, std::allocator<cl::Platform>&) [100]
+                0.00    0.00       1/1           std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::~_Vector_base() [198]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[223]    0.0    0.00    0.00       1         std::vector<cl::Platform, std::allocator<cl::Platform> >::operator[](unsigned long) [223]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::vector(unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> > const&) [225]
+[224]    0.0    0.00    0.00       1         std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_fill_initialize(unsigned long, std::pair<char const*, unsigned long> const&) [224]
+                0.00    0.00       1/2           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_get_Tp_allocator() [94]
+                0.00    0.00       1/1           void std::__uninitialized_fill_n_a<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> >&) [243]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[225]    0.0    0.00    0.00       1         std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::vector(unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> > const&) [225]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_base(unsigned long, std::allocator<std::pair<char const*, unsigned long> > const&) [204]
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_fill_initialize(unsigned long, std::pair<char const*, unsigned long> const&) [224]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[226]    0.0    0.00    0.00       1         std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~vector() [226]
+                0.00    0.00       1/2           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_get_Tp_allocator() [94]
+                0.00    0.00       1/1           void std::_Destroy<std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*, std::allocator<std::pair<char const*, unsigned long> >&) [246]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~_Vector_base() [205]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [207]
+[227]    0.0    0.00    0.00       1         void std::_Construct<cl::Device, _cl_device_id*>(cl::Device*, _cl_device_id* const&) [227]
+                0.00    0.00       1/4           operator new(unsigned long, void*) [29]
+                0.00    0.00       1/1           cl::Device::Device(_cl_device_id* const&) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+[228]    0.0    0.00    0.00       1         void std::_Construct<cl::Device, cl::Device>(cl::Device*, cl::Device const&) [228]
+                0.00    0.00       1/4           operator new(unsigned long, void*) [29]
+                0.00    0.00       1/1           cl::Device::Device(cl::Device const&) [113]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform* std::__uninitialized_copy<false>::__uninit_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [208]
+[229]    0.0    0.00    0.00       1         void std::_Construct<cl::Platform, _cl_platform_id*>(cl::Platform*, _cl_platform_id* const&) [229]
+                0.00    0.00       1/4           operator new(unsigned long, void*) [29]
+                0.00    0.00       1/1           cl::Platform::Platform(_cl_platform_id* const&) [154]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [209]
+[230]    0.0    0.00    0.00       1         void std::_Construct<std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> const&) [230]
+                0.00    0.00       1/4           operator new(unsigned long, void*) [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::iterator_traits<_cl_device_id**>::difference_type std::distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [247]
+[231]    0.0    0.00    0.00       1         std::iterator_traits<_cl_device_id**>::difference_type std::__distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::random_access_iterator_tag) [231]
+-----------------------------------------------
+                0.00    0.00       1/1           std::iterator_traits<_cl_platform_id**>::difference_type std::distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [248]
+[232]    0.0    0.00    0.00       1         std::iterator_traits<_cl_platform_id**>::difference_type std::__distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::random_access_iterator_tag) [232]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [209]
+[233]    0.0    0.00    0.00       1         std::pair<char const*, unsigned long>* std::__addressof<std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>&) [233]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, cl::Device>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, std::allocator<cl::Device>&) [240]
+[234]    0.0    0.00    0.00       1         cl::Device* std::uninitialized_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [234]
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [206]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy_a<_cl_device_id**, cl::Device*, cl::Device>(_cl_device_id**, _cl_device_id**, cl::Device*, std::allocator<cl::Device>&) [241]
+[235]    0.0    0.00    0.00       1         cl::Device* std::uninitialized_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [235]
+                0.00    0.00       1/1           cl::Device* std::__uninitialized_copy<false>::__uninit_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [207]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform* std::__uninitialized_copy_a<_cl_platform_id**, cl::Platform*, cl::Platform>(_cl_platform_id**, _cl_platform_id**, cl::Platform*, std::allocator<cl::Platform>&) [242]
+[236]    0.0    0.00    0.00       1         cl::Platform* std::uninitialized_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [236]
+                0.00    0.00       1/1           cl::Platform* std::__uninitialized_copy<false>::__uninit_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [208]
+-----------------------------------------------
+                0.00    0.00       1/1           std::iterator_traits<_cl_device_id**>::difference_type std::distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [247]
+[237]    0.0    0.00    0.00       1         std::iterator_traits<_cl_device_id**>::iterator_category std::__iterator_category<_cl_device_id**>(_cl_device_id** const&) [237]
+-----------------------------------------------
+                0.00    0.00       1/1           std::iterator_traits<_cl_platform_id**>::difference_type std::distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [248]
+[238]    0.0    0.00    0.00       1         std::iterator_traits<_cl_platform_id**>::iterator_category std::__iterator_category<_cl_platform_id**>(_cl_platform_id** const&) [238]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__uninitialized_fill_n_a<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> >&) [243]
+[239]    0.0    0.00    0.00       1         void std::uninitialized_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [239]
+                0.00    0.00       1/1           void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [209]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >) [213]
+[240]    0.0    0.00    0.00       1         cl::Device* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, cl::Device>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, std::allocator<cl::Device>&) [240]
+                0.00    0.00       1/1           cl::Device* std::uninitialized_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*) [234]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**) [214]
+[241]    0.0    0.00    0.00       1         cl::Device* std::__uninitialized_copy_a<_cl_device_id**, cl::Device*, cl::Device>(_cl_device_id**, _cl_device_id**, cl::Device*, std::allocator<cl::Device>&) [241]
+                0.00    0.00       1/1           cl::Device* std::uninitialized_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*) [235]
+-----------------------------------------------
+                0.00    0.00       1/1           cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**) [219]
+[242]    0.0    0.00    0.00       1         cl::Platform* std::__uninitialized_copy_a<_cl_platform_id**, cl::Platform*, cl::Platform>(_cl_platform_id**, _cl_platform_id**, cl::Platform*, std::allocator<cl::Platform>&) [242]
+                0.00    0.00       1/1           cl::Platform* std::uninitialized_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*) [236]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_fill_initialize(unsigned long, std::pair<char const*, unsigned long> const&) [224]
+[243]    0.0    0.00    0.00       1         void std::__uninitialized_fill_n_a<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> >&) [243]
+                0.00    0.00       1/1           void std::uninitialized_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&) [239]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy_aux<false>::__destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [87]
+[244]    0.0    0.00    0.00       1         void std::_Destroy<cl::Platform>(cl::Platform*) [244]
+                0.00    0.00       1/1           cl::Platform::~Platform() [155]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*, std::allocator<std::pair<char const*, unsigned long> >&) [246]
+[245]    0.0    0.00    0.00       1         void std::_Destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*) [245]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*) [193]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~vector() [226]
+[246]    0.0    0.00    0.00       1         void std::_Destroy<std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*, std::allocator<std::pair<char const*, unsigned long> >&) [246]
+                0.00    0.00       1/1           void std::_Destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*) [245]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag) [211]
+[247]    0.0    0.00    0.00       1         std::iterator_traits<_cl_device_id**>::difference_type std::distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**) [247]
+                0.00    0.00       1/1           std::iterator_traits<_cl_device_id**>::iterator_category std::__iterator_category<_cl_device_id**>(_cl_device_id** const&) [237]
+                0.00    0.00       1/1           std::iterator_traits<_cl_device_id**>::difference_type std::__distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::random_access_iterator_tag) [231]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag) [217]
+[248]    0.0    0.00    0.00       1         std::iterator_traits<_cl_platform_id**>::difference_type std::distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**) [248]
+                0.00    0.00       1/1           std::iterator_traits<_cl_platform_id**>::iterator_category std::__iterator_category<_cl_platform_id**>(_cl_platform_id** const&) [238]
+                0.00    0.00       1/1           std::iterator_traits<_cl_platform_id**>::difference_type std::__distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::random_access_iterator_tag) [232]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[249]    0.0    0.00    0.00       1         std::pair<char const*, unsigned long> std::make_pair<char const*, unsigned long>(char const*, unsigned long) [249]
+                0.00    0.00       1/1           std::pair<char const*, unsigned long>::pair(char const* const&, unsigned long const&) [210]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [102] _GLOBAL__sub_I_main   [145] cl::Context::Context() [88] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_allocate(unsigned long)
+ [103] __static_initialization_and_destruction_0(int, int) [146] cl::Context::~Context() [89] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::_Vector_impl()
+ [104] cl::CommandQueue::CommandQueue(cl::Context const&, cl::Device const&, unsigned long, int*) [147] cl::Image2D::Image2D() [90] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_impl::~_Vector_impl()
+ [105] cl::CommandQueue::CommandQueue() [148] cl::Image2D::~Image2D() [25] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_deallocate(cl::Device*, unsigned long)
+ [106] cl::CommandQueue::~CommandQueue() [149] cl::NDRange::NDRange() [20] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_M_get_Tp_allocator()
+ [107] cl::Event::Event()     [65] cl::NDRange::NDRange(unsigned long) [91] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::_Vector_base()
+ [108] cl::Event::~Event()   [150] cl::Program::Program(cl::Context const&, std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > > const&, int*) [92] std::_Vector_base<cl::Device, std::allocator<cl::Device> >::~_Vector_base()
+ [109] cl::Event::operator=(_cl_event* const&) [151] cl::Program::Program() [194] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_allocate(unsigned long)
+ [110] cl::Image::Image()     [66] cl::Program::~Program() [195] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::_Vector_impl()
+ [111] cl::Image::~Image()   [152] cl::Program::operator=(cl::Program const&) [196] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_impl::~_Vector_impl()
+ [112] cl::Local(unsigned long) [153] cl::Platform::get(std::vector<cl::Platform, std::allocator<cl::Platform> >*) [93] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_deallocate(cl::Platform*, unsigned long)
+  [30] cl::Buffer::Buffer(cl::Context const&, unsigned long, unsigned long, void*, int*) [154] cl::Platform::Platform(_cl_platform_id* const&) [45] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_M_get_Tp_allocator()
+  [31] cl::Buffer::Buffer(cl::Buffer const&) [155] cl::Platform::~Platform() [197] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::_Vector_base()
+  [32] cl::Buffer::Buffer()   [67] __gnu_cxx::new_allocator<cl::Device>::deallocate(cl::Device*, unsigned long) [198] std::_Vector_base<cl::Platform, std::allocator<cl::Platform> >::~_Vector_base()
+  [13] cl::Buffer::~Buffer()  [68] __gnu_cxx::new_allocator<cl::Device>::allocate(unsigned long, void const*) [199] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_allocate(unsigned long)
+  [33] cl::Buffer::operator=(cl::Buffer const&) [69] __gnu_cxx::new_allocator<cl::Device>::new_allocator() [200] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<char const*, unsigned long> > const&)
+ [113] cl::Device::Device(cl::Device const&) [70] __gnu_cxx::new_allocator<cl::Device>::~new_allocator() [201] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_impl::~_Vector_impl()
+ [114] cl::Device::Device(_cl_device_id* const&) [156] __gnu_cxx::new_allocator<cl::Platform>::deallocate(cl::Platform*, unsigned long) [202] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_deallocate(std::pair<char const*, unsigned long>*, unsigned long)
+  [47] cl::Device::~Device() [157] __gnu_cxx::new_allocator<cl::Platform>::allocate(unsigned long, void const*) [203] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_create_storage(unsigned long)
+ [115] int cl::Kernel::setArg<cl::LocalSpaceArg>(unsigned int, cl::LocalSpaceArg) [158] __gnu_cxx::new_allocator<cl::Platform>::new_allocator() [94] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_get_Tp_allocator()
+  [34] int cl::Kernel::setArg<cl::Buffer>(unsigned int, cl::Buffer) [159] __gnu_cxx::new_allocator<cl::Platform>::~new_allocator() [204] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_Vector_base(unsigned long, std::allocator<std::pair<char const*, unsigned long> > const&)
+ [116] int cl::Kernel::setArg<unsigned int>(unsigned int, unsigned int) [160] __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::deallocate(std::pair<char const*, unsigned long>*, unsigned long) [205] std::_Vector_base<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~_Vector_base()
+ [117] cl::Kernel::Kernel(cl::Program const&, char const*, int*) [161] __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::allocate(unsigned long, void const*) [206] cl::Device* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*)
+ [118] cl::Kernel::~Kernel() [162] __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator(__gnu_cxx::new_allocator<std::pair<char const*, unsigned long> > const&) [207] cl::Device* std::__uninitialized_copy<false>::__uninit_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*)
+  [35] cl::Memory::Memory(cl::Memory const&) [163] __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::new_allocator() [208] cl::Platform* std::__uninitialized_copy<false>::__uninit_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*)
+  [16] cl::Memory::Memory()   [71] __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::~new_allocator() [209] void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&)
+  [11] cl::Memory::~Memory()  [72] __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::__normal_iterator(cl::Device const* const&) [210] std::pair<char const*, unsigned long>::pair(char const* const&, unsigned long const&)
+  [36] cl::Memory::operator=(cl::Memory const&) [164] __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator++() [211] void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_aux<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::forward_iterator_tag)
+ [119] int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, cl::Device>(cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*, int, cl::Device::cl_type) [73] bool __gnu_cxx::operator!=<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > const&) [212] void std::vector<cl::Device, std::allocator<cl::Device> >::_M_assign_dispatch<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::__false_type)
+ [120] int cl::detail::getInfoHelper<cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*> >(cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>, unsigned int, std::string*, long) [74] cl::CommandQueue::enqueueReadBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [213] cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > > >(unsigned long, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >)
+  [48] cl::detail::GetInfoFunctor0<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*>::operator()(unsigned int, unsigned long, void*, unsigned long*) [75] cl::CommandQueue::enqueueWriteBuffer(cl::Buffer const&, unsigned int, unsigned long, unsigned long, void const*, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [214] cl::Device* std::vector<cl::Device, std::allocator<cl::Device> >::_M_allocate_and_copy<_cl_device_id**>(unsigned long, _cl_device_id**, _cl_device_id**)
+  [49] cl::detail::GetInfoFunctor1<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*>::operator()(unsigned int, unsigned long, void*, unsigned long*) [165] cl::CommandQueue::enqueueNDRangeKernel(cl::Kernel const&, cl::NDRange const&, cl::NDRange const&, cl::NDRange const&, std::vector<cl::Event, std::allocator<cl::Event> > const*, cl::Event*) const [215] void std::vector<cl::Device, std::allocator<cl::Device> >::assign<_cl_device_id**>(_cl_device_id**, _cl_device_id**)
+ [121] cl::detail::ReferenceHandler<_cl_kernel*>::release(_cl_kernel*) [166] cl::Event::wait() const [95] std::vector<cl::Device, std::allocator<cl::Device> >::vector()
+ [122] cl::detail::ReferenceHandler<_cl_context*>::release(_cl_context*) [167] cl::detail::Wrapper<_cl_kernel*>::release() const [96] std::vector<cl::Device, std::allocator<cl::Device> >::~vector()
+ [123] cl::detail::ReferenceHandler<_cl_program*>::retain(_cl_program*) [168] cl::detail::Wrapper<_cl_kernel*>::operator()() const [216] std::vector<cl::Device, std::allocator<cl::Device> >::operator=(std::vector<cl::Device, std::allocator<cl::Device> > const&)
+  [50] cl::detail::ReferenceHandler<_cl_program*>::release(_cl_program*) [169] cl::detail::Wrapper<_cl_context*>::release() const [46] std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long)
+  [51] cl::detail::ReferenceHandler<_cl_device_id*>::retain(_cl_device_id*) [21] cl::detail::Wrapper<_cl_context*>::operator()() const [217] void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_aux<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::forward_iterator_tag)
+  [52] cl::detail::ReferenceHandler<_cl_device_id*>::release(_cl_device_id*) [170] cl::detail::Wrapper<_cl_program*>::retain() const [218] void std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_assign_dispatch<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::__false_type)
+ [124] cl::detail::ReferenceHandler<_cl_platform_id*>::release(_cl_platform_id*) [76] cl::detail::Wrapper<_cl_program*>::release() const [219] cl::Platform* std::vector<cl::Platform, std::allocator<cl::Platform> >::_M_allocate_and_copy<_cl_platform_id**>(unsigned long, _cl_platform_id**, _cl_platform_id**)
+ [125] cl::detail::ReferenceHandler<_cl_command_queue*>::release(_cl_command_queue*) [171] cl::detail::Wrapper<_cl_program*>::operator()() const [220] void std::vector<cl::Platform, std::allocator<cl::Platform> >::assign<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**)
+  [18] cl::detail::ReferenceHandler<_cl_mem*>::retain(_cl_mem*) [77] cl::detail::Wrapper<_cl_device_id*>::retain() const [221] std::vector<cl::Platform, std::allocator<cl::Platform> >::vector()
+  [14] cl::detail::ReferenceHandler<_cl_mem*>::release(_cl_mem*) [78] cl::detail::Wrapper<_cl_device_id*>::release() const [222] std::vector<cl::Platform, std::allocator<cl::Platform> >::~vector()
+ [126] cl::detail::ReferenceHandler<_cl_event*>::release(_cl_event*) [42] cl::detail::Wrapper<_cl_device_id*>::operator()() const [223] std::vector<cl::Platform, std::allocator<cl::Platform> >::operator[](unsigned long)
+ [127] cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::ptr(cl::LocalSpaceArg&) [172] cl::detail::Wrapper<_cl_platform_id*>::release() const [224] std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::_M_fill_initialize(unsigned long, std::pair<char const*, unsigned long> const&)
+ [128] cl::detail::KernelArgumentHandler<cl::LocalSpaceArg>::size(cl::LocalSpaceArg const&) [173] cl::detail::Wrapper<_cl_command_queue*>::release() const [225] std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::vector(unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> > const&)
+  [37] cl::detail::KernelArgumentHandler<cl::Buffer>::ptr(cl::Buffer&) [19] cl::detail::Wrapper<_cl_mem*>::retain() const [226] std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::~vector()
+  [38] cl::detail::KernelArgumentHandler<cl::Buffer>::size(cl::Buffer const&) [15] cl::detail::Wrapper<_cl_mem*>::release() const [227] void std::_Construct<cl::Device, _cl_device_id*>(cl::Device*, _cl_device_id* const&)
+ [129] cl::detail::KernelArgumentHandler<unsigned int>::ptr(unsigned int&) [22] cl::detail::Wrapper<_cl_mem*>::operator()() const [228] void std::_Construct<cl::Device, cl::Device>(cl::Device*, cl::Device const&)
+ [130] cl::detail::KernelArgumentHandler<unsigned int>::size(unsigned int const&) [174] cl::detail::Wrapper<_cl_event*>::release() const [229] void std::_Construct<cl::Platform, _cl_platform_id*>(cl::Platform*, _cl_platform_id* const&)
+ [131] cl::detail::Wrapper<_cl_kernel*>::Wrapper() [79] cl::size_t<3>::operator unsigned long const*() const [230] void std::_Construct<std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> const&)
+ [132] cl::detail::Wrapper<_cl_kernel*>::~Wrapper() [175] cl::detail::param_traits<cl::detail::cl_context_info, 4225>::param_type cl::Context::getInfo<4225>(int*) const [231] std::iterator_traits<_cl_device_id**>::difference_type std::__distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**, std::random_access_iterator_tag)
+  [53] cl::detail::Wrapper<_cl_context*>::Wrapper() [176] int cl::Context::getInfo<std::vector<cl::Device, std::allocator<cl::Device> > >(unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) const [232] std::iterator_traits<_cl_platform_id**>::difference_type std::__distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**, std::random_access_iterator_tag)
+  [54] cl::detail::Wrapper<_cl_context*>::~Wrapper() [43] cl::NDRange::dimensions() const [26] cl::Device* std::__addressof<cl::Device>(cl::Device&)
+  [55] cl::detail::Wrapper<_cl_program*>::Wrapper() [80] cl::NDRange::operator unsigned long const*() const [97] cl::Platform* std::__addressof<cl::Platform>(cl::Platform&)
+  [56] cl::detail::Wrapper<_cl_program*>::~Wrapper() [177] cl::detail::param_traits<cl::detail::cl_program_build_info, 4483>::param_type cl::Program::getBuildInfo<4483>(cl::Device const&, int*) const [233] std::pair<char const*, unsigned long>* std::__addressof<std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>&)
+ [133] cl::detail::Wrapper<_cl_program*>::operator=(cl::detail::Wrapper<_cl_program*> const&) [178] int cl::Program::getBuildInfo<std::string>(cl::Device const&, unsigned int, std::string*) const [234] cl::Device* std::uninitialized_copy<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*)
+  [57] cl::detail::Wrapper<_cl_device_id*>::isReferenceCountable(_cl_device_id*) [179] cl::Program::build(std::vector<cl::Device, std::allocator<cl::Device> > const&, char const*, void (*)(_cl_program*, void*), void*) const [235] cl::Device* std::uninitialized_copy<_cl_device_id**, cl::Device*>(_cl_device_id**, _cl_device_id**, cl::Device*)
+ [134] cl::detail::Wrapper<_cl_device_id*>::Wrapper(_cl_device_id* const&) [81] __gnu_cxx::new_allocator<cl::Device>::max_size() const [236] cl::Platform* std::uninitialized_copy<_cl_platform_id**, cl::Platform*>(_cl_platform_id**, _cl_platform_id**, cl::Platform*)
+ [135] cl::detail::Wrapper<_cl_device_id*>::Wrapper(cl::detail::Wrapper<_cl_device_id*> const&) [180] __gnu_cxx::new_allocator<cl::Platform>::max_size() const [237] std::iterator_traits<_cl_device_id**>::iterator_category std::__iterator_category<_cl_device_id**>(_cl_device_id** const&)
+  [58] cl::detail::Wrapper<_cl_device_id*>::~Wrapper() [181] __gnu_cxx::new_allocator<std::pair<char const*, unsigned long> >::max_size() const [238] std::iterator_traits<_cl_platform_id**>::iterator_category std::__iterator_category<_cl_platform_id**>(_cl_platform_id** const&)
+ [136] cl::detail::Wrapper<_cl_platform_id*>::Wrapper(_cl_platform_id* const&) [23] __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::base() const [239] void std::uninitialized_fill_n<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&)
+ [137] cl::detail::Wrapper<_cl_platform_id*>::~Wrapper() [182] __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >::operator*() const [240] cl::Device* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, cl::Device>(__gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, __gnu_cxx::__normal_iterator<cl::Device const*, std::vector<cl::Device, std::allocator<cl::Device> > >, cl::Device*, std::allocator<cl::Device>&)
+ [138] cl::detail::Wrapper<_cl_platform_id*>::operator()() [183] std::vector<cl::Device, std::allocator<cl::Device> >::end() const [241] cl::Device* std::__uninitialized_copy_a<_cl_device_id**, cl::Device*, cl::Device>(_cl_device_id**, _cl_device_id**, cl::Device*, std::allocator<cl::Device>&)
+  [59] cl::detail::Wrapper<_cl_command_queue*>::Wrapper() [44] std::vector<cl::Device, std::allocator<cl::Device> >::size() const [242] cl::Platform* std::__uninitialized_copy_a<_cl_platform_id**, cl::Platform*, cl::Platform>(_cl_platform_id**, _cl_platform_id**, cl::Platform*, std::allocator<cl::Platform>&)
+  [60] cl::detail::Wrapper<_cl_command_queue*>::~Wrapper() [184] std::vector<cl::Device, std::allocator<cl::Device> >::begin() const [243] void std::__uninitialized_fill_n_a<std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long>, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, unsigned long, std::pair<char const*, unsigned long> const&, std::allocator<std::pair<char const*, unsigned long> >&)
+  [39] cl::detail::Wrapper<_cl_mem*>::Wrapper(cl::detail::Wrapper<_cl_mem*> const&) [82] std::vector<cl::Device, std::allocator<cl::Device> >::capacity() const [98] void std::_Destroy<cl::Device>(cl::Device*)
+  [17] cl::detail::Wrapper<_cl_mem*>::Wrapper() [185] std::vector<cl::Device, std::allocator<cl::Device> >::operator[](unsigned long) const [244] void std::_Destroy<cl::Platform>(cl::Platform*)
+  [12] cl::detail::Wrapper<_cl_mem*>::~Wrapper() [186] std::vector<cl::Platform, std::allocator<cl::Platform> >::size() const [27] void std::_Destroy<cl::Device*>(cl::Device*, cl::Device*)
+  [40] cl::detail::Wrapper<_cl_mem*>::operator=(cl::detail::Wrapper<_cl_mem*> const&) [187] std::vector<cl::Platform, std::allocator<cl::Platform> >::capacity() const [28] void std::_Destroy<cl::Device*, cl::Device>(cl::Device*, cl::Device*, std::allocator<cl::Device>&)
+ [139] cl::detail::Wrapper<_cl_event*>::Wrapper() [188] std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::size() const [99] void std::_Destroy<cl::Platform*>(cl::Platform*, cl::Platform*)
+ [140] cl::detail::Wrapper<_cl_event*>::~Wrapper() [83] std::vector<std::pair<char const*, unsigned long>, std::allocator<std::pair<char const*, unsigned long> > >::operator[](unsigned long) const [100] void std::_Destroy<cl::Platform*, cl::Platform>(cl::Platform*, cl::Platform*, std::allocator<cl::Platform>&)
+ [141] cl::detail::Wrapper<_cl_event*>::operator=(_cl_event* const&) [84] std::allocator<cl::Device>::allocator() [245] void std::_Destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*)
+ [142] int cl::detail::getInfo<int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context*, std::vector<cl::Device, std::allocator<cl::Device> > >(int (*)(_cl_context*, unsigned int, unsigned long, void*, unsigned long*), _cl_context* const&, unsigned int, std::vector<cl::Device, std::allocator<cl::Device> >*) [85] std::allocator<cl::Device>::~allocator() [246] void std::_Destroy<std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long> >(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*, std::allocator<std::pair<char const*, unsigned long> >&)
+ [143] int cl::detail::getInfo<int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program*, _cl_device_id*, std::string>(int (*)(_cl_program*, _cl_device_id*, unsigned int, unsigned long, void*, unsigned long*), _cl_program* const&, _cl_device_id* const&, unsigned int, std::string*) [189] std::allocator<cl::Platform>::allocator() [247] std::iterator_traits<_cl_device_id**>::difference_type std::distance<_cl_device_id**>(_cl_device_id**, _cl_device_id**)
+  [10] cl::detail::errHandler(int, char const*) [190] std::allocator<cl::Platform>::~allocator() [248] std::iterator_traits<_cl_platform_id**>::difference_type std::distance<_cl_platform_id**>(_cl_platform_id**, _cl_platform_id**)
+  [61] cl::detail::getVersion(char const*) [191] std::allocator<std::pair<char const*, unsigned long> >::allocator() [249] std::pair<char const*, unsigned long> std::make_pair<char const*, unsigned long>(char const*, unsigned long)
+  [62] cl::detail::getPlatformVersion(_cl_platform_id*) [192] std::allocator<std::pair<char const*, unsigned long> >::allocator(std::allocator<std::pair<char const*, unsigned long> > const&) [101] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  [63] cl::detail::getDevicePlatformVersion(_cl_device_id*) [86] std::allocator<std::pair<char const*, unsigned long> >::~allocator() [8] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  [41] cl::size_t<3>::size_t() [24] void std::_Destroy_aux<false>::__destroy<cl::Device*>(cl::Device*, cl::Device*) [9] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [64] cl::size_t<3>::operator[](int) [87] void std::_Destroy_aux<false>::__destroy<cl::Platform*>(cl::Platform*, cl::Platform*) [29] operator new(unsigned long, void*)
+ [144] cl::Context::Context(unsigned long, long*, void (*)(char const*, void const*, unsigned long, void*), void*, int*) [193] void std::_Destroy_aux<true>::__destroy<std::pair<char const*, unsigned long>*>(std::pair<char const*, unsigned long>*, std::pair<char const*, unsigned long>*)

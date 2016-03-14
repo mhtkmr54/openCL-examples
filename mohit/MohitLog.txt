@@ -1,0 +1,7 @@
+"/tmp/OCL3435T4.cl", line 17: error: expected a declaration
+  }
+  ^
+
+1 error detected in the compilation of "/tmp/OCL3435T4.cl".
+
+Frontend phase failed compilation.

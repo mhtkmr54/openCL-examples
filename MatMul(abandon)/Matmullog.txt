@@ -1,0 +1,5 @@
+"/tmp/OCL4435T5.cl", line 13: warning: variable "j" was declared but never
+          referenced
+      int j=0;
+          ^
+

@@ -1,0 +1,61 @@
+"/tmp/OCL10467T5.cl", line 13: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+      float dt =0.1;
+                ^
+
+"/tmp/OCL10467T5.cl", line 17: error: not enough initializer values
+      float2 a = (float4)(0,0);
+                             ^
+
+"/tmp/OCL10467T5.cl", line 17: error: a value of type "float4" cannot be used
+          to initialize an entity of type "float2"
+      float2 a = (float4)(0,0);
+                 ^
+
+"/tmp/OCL10467T5.cl", line 23: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+            r = d.x*d.x + d.y*d.y + 0.001;
+                                    ^
+
+"/tmp/OCL10467T5.cl", line 13: warning: variable "dt" was declared but never
+          referenced
+      float dt =0.1;
+            ^
+
+"/tmp/OCL10467T5.cl", line 32: error: identifier "p" is undefined
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+               ^
+
+"/tmp/OCL10467T5.cl", line 32: error: identifier "dt" is undefined
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+                         ^
+
+"/tmp/OCL10467T5.cl", line 32: error: mixed vector-scalar operation not
+          allowed unless up-convertable(scalar-type=>vector-element-type)
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+                         ^
+
+"/tmp/OCL10467T5.cl", line 32: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+                              ^
+
+"/tmp/OCL10467T5.cl", line 32: error: identifier "a" is undefined
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+                                  ^
+
+"/tmp/OCL10467T5.cl", line 33: error: mixed vector-scalar operation not
+          allowed unless up-convertable(scalar-type=>vector-element-type)
+      v[id] += a*dt;
+               ^
+
+"/tmp/OCL10467T5.cl", line 35: error: expected a declaration
+  }
+  ^
+
+8 errors detected in the compilation of "/tmp/OCL10467T5.cl".
+
+Frontend phase failed compilation.

@@ -1,0 +1,35 @@
+"/tmp/OCL2553T5.cl", line 18: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+      float dt =0.1;
+                ^
+
+"/tmp/OCL2553T5.cl", line 32: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+            r = d.x*d.x + d.y*d.y + d.z*d.z + 0.001;
+                                              ^
+
+"/tmp/OCL2553T5.cl", line 41: warning: double-precision constant is
+          represented as single-precision constant because double is not
+          enabled
+      pf[id] = p + v[id]*dt + 0.5*a*dt*dt;
+                              ^
+
+"/tmp/OCL2553T5.cl", line 44: warning: expression has no effect
+      uint4 color = (0,0,100,0);
+                     ^
+
+"/tmp/OCL2553T5.cl", line 44: warning: expression has no effect
+      uint4 color = (0,0,100,0);
+                     ^
+
+"/tmp/OCL2553T5.cl", line 44: warning: expression has no effect
+      uint4 color = (0,0,100,0);
+                     ^
+
+"/tmp/OCL2553T5.cl", line 44: warning: variable "color" was declared but never
+          referenced
+      uint4 color = (0,0,100,0);
+            ^
+
